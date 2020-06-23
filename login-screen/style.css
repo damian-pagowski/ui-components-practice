@@ -33,8 +33,6 @@ body {
   padding: 1rem;
   font-size: 1.1rem;
 }
-.radio-group-wrapper {
-}
 
 label {
   font-size: 1.2rem;
@@ -90,9 +88,6 @@ input[type="checkbox"] {
   color: #fff;
   border: 0;
 }
-.btn-google-login {
-}
-
 .text-center {
   margin-top: 1rem;
   font-size: 1.1rem;
@@ -112,7 +107,7 @@ input[type="checkbox"] {
 }
 
 .icon-container {
-  width: 5rem;
+  min-width: 50px;
   text-align: center;
   margin-right: 1.5rem;
 }
@@ -128,4 +123,13 @@ input[type="checkbox"] {
 }
 .desc p {
   font-size: 1.15rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container .form {
+    order: 2;
+  }
 }
