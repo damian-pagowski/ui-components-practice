@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 4rem;
+  max-width: 960px;
+}
+
+.container .col {
+  margin: 1rem;
+}
+
+.text-centered-block {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+.radio-group-wrapper {
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 1rem;
+  color: #a9adbc;
+  border-radius: 5px;
+  border: 2px solid #e3e8f7;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  user-select: none;
+  margin-right: 0.5rem;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 2px solid #e3e8f7;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid #e3e8f7;
+  background-color: #fff;
+  color: #a9adbc;
+  font-size: 1.3rem;
+}
+.btn-login {
+  background: #10182f;
+  color: #fff;
+  border: 0;
+}
+.btn-google-login {
+}
+
+.text-center {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+.feature {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-container {
+  width: 5rem;
+  text-align: center;
+  margin-right: 1.5rem;
+}
+.icon-container i {
+  color: #2f6af3;
+  font-size: 3rem;
+}
+
+.desc h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 0.6rem;
+}
+.desc p {
+  font-size: 1.15rem;
+}
