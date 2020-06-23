@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  --main-bg-color: #161f3b;
+  --container-bg-color: #242e4c;
+  --bg-row-active: #151f3a;
+  --text-buttons: #5e6a8d;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  font-family: "Muli", sans-serif;
+}
+.container {
+  background-color: var(--container-bg-color);
+  width: 90%;
+  height: 80%;
+  border-radius: 25px;
+  padding: 4rem;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  border: 1px solid var(--main-bg-color);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  color: var(--text-buttons);
+  background-color: var(--container-bg-color);
+}
+
+.btn-plus {
+  margin: 2rem 1rem;
+  background-color: #f371bd;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn-w-badge {
+  position: relative;
+}
+.badge {
+  top: -5px;
+  right: -5px;
+  position: absolute;
+  background-color: #f371bd;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
+}
+
+input {
+  border: 1px solid var(--main-bg-color);
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-buttons);
+  background-color: var(--container-bg-color);
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  position: absolute;
+  padding: 10px;
+  min-width: 50px;
+  text-align: center;
+  color: var(--text-buttons);
+  top: 10px;
+}
+
+.input-field {
+  padding-left: 50px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1.5fr;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 1.1rem 0 1.1rem 3rem;
+  color: var(--text-buttons);
+  margin: 0.5rem;
+}
+
+.row-border-1 {
+  border-left: 5px solid #80cda5;
+}
+.row-border-2 {
+  border-left: 5px solid #f4b17b;
+}
+.row-border-3 {
+  border-left: 5px solid #598bde;
+}
+.row {
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 1rem 0 1rem 3rem;
+  color: var(--text-buttons);
+  margin: 0.5rem;
+  background-color: var(--main-bg-color);
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 7px;
+  background-color: #f4b17b;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.btn-del {
+  border: 1px solid var(--main-bg-color);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.5rem;
+  color: var(--text-buttons);
+  background-color: var(--container-bg-color);
+}
+.btn-del i {
+  font-size: 0.9rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
