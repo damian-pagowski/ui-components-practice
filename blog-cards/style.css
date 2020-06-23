@@ -13,8 +13,8 @@ body {
   margin: 0;
 }
 .container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 70%;
   margin: auto;
 }
@@ -24,7 +24,7 @@ body {
   border-radius: 10px;
   margin: 0 2rem;
 
-  width: calc(100% / 3);
+  /* width: calc(100% / 3); */
 }
 
 .card-body {
@@ -41,27 +41,24 @@ body {
   display: inline-block;
   margin: 3px 5px;
   text-transform: uppercase;
-
 }
 .tag-teal {
   background: #47bcd3;
   color: #fff;
 }
 
-.tag-blue{
-    background: #5d76bf;
-    color: #fff;
-
+.tag-blue {
+  background: #5d76bf;
+  color: #fff;
 }
 
-.tag-pink{
-    background: #cd5a9f;
-    color: #fff;
-
+.tag-pink {
+  background: #cd5a9f;
+  color: #fff;
 }
 .card-header {
-  width: 100%;
-  height: 200px;
+  /* width: 100%; */
+  height: 300px;
 }
 
 .user {
@@ -112,4 +109,13 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+@media (max-width: 940px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    margin: 1rem 0;
+  }
 }
