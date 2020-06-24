@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --card-bg-color: #21262b;
+  --bg-red: #bc1d4a;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  height: 100vh;
+  align-items: center;
+}
+
+.current-plan {
+  background-color: var(--bg-red);
+  padding: 2rem 5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.select-plan {
+  text-align: center;
+  margin: 5rem;
+}
+
+.current-plan p {
+  font-size: 1.2rem;
+}
+.cards-container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.card {
+  width: calc(100% / 3);
+  background-color: var(--card-bg-color);
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .title {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.card .price {
+  margin: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.card ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2rem;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 7px;
+  background-color: var(--bg-red);
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.outline-btn {
+  margin-top: 2rem;
+  background-color: var(--card-bg-color);
+  border: 1.2px solid var(--bg-red);
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+}
+.solid-btn {
+  margin-top: 2rem;
+  background-color: var(--bg-red);
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+}
+
+.select-plan h1 {
+  margin-bottom: 1rem;
+}
+
+.select-plan .option {
+  display: inline-block;
+  padding-top: 0.4rem;
+  margin: 0 1rem;
+}
+.toggle-container {
+  display: flex;
+  flex-direction: row;
+}
+/* toggel */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--bg-red);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--bg-red);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* select */
+
+/* select{  
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border: px solid #fff;
+  border-radius: 5px;
+  background-color: var(--card-bg-color);
+  color: #fff;
+} */
+
+select {
+  /* styling */
+  background-color: var(--card-bg-color);
+  color: #fff;
+  border: 1.1 px solid #fff;
+
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 1rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  background-image: linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
