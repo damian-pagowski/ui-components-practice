@@ -69,9 +69,12 @@ body{
   object-fit: cover;
   object-position: center;
 }
+.card-body{
+    padding: 0 1rem ;
+}
 
 .author {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -96,4 +99,22 @@ body{
     text-decoration: none;
     color: var(--dark-gray)
 
+}
+
+#newsletter{
+    margin: 3rem 0;
+}
+
+.article{
+    margin-bottom: 3rem;
+}
+
+.article h2{
+    text-transform: capitalize;
+}
+
+#main-content{
+    display: grid ;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 3rem;
 }
