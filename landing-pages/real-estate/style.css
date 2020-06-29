@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+
+:root {
+  --blue-dark: rgb(4, 75, 251);
+  --blue-md: #5e89fc;
+  --blue-light: #78acfc;
+  --beige: #eee5df;
+  --brown: #b26e4d;
+  --orange: #ff8a00;
+  --brown-dark: #74648c;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #25515a;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.container {
+  margin: 88px 153px;
+  background: #fff;
+  min-height: calc(100vh - 88px * 2);
+  display: flex;
+  flex-direction: column;
+  /* grid-template-rows: 3fr 2fr; */
+}
+
+.container .top {
+  background: url("../../img/house-w-pool.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+  min-height: 60vh;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+nav li button {
+  padding: 1rem 2rem;
+  background-color: #ed5565;
+  border: 0;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.search-wrapper {
+  padding: 3rem 5rem;
+  padding-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  width: 50%;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-wrapper input {
+  font-weight: bold;
+
+  width: 100%;
+  height: 4rem;
+  margin: 0;
+  border: 0;
+  padding-left: 2rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-wrapper button {
+  background-color: #ed5565;
+  height: 4rem;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.categories {
+  padding: 0;
+}
+.categories li {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  /* border-right: 1px solid ; */
+}
+
+.stats {
+  display: flex;
+  padding: 0 0 4rem 0;
+}
+
+.stat-item {
+  border-right: 1px solid;
+  padding: 0 2rem;
+  text-align: center;
+}
+.stat-item:last-of-type {
+  border-right: 0;
+}
+
+.stat-item h1 {
+}
+
+.stat-item small {
+}
+
+.bottom h2 {
+  padding: 1.5rem;
+  color: #17363a;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.cards-container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: center; */
+  padding-bottom: 2rem;
+}
+.card {
+  margin: 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  /* width: calc(100% / 3); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.card .card-image {
+  width: 300px;
+  height: 200px;
+  margin: 2rem auto;
+  background: url("../../img/house1.jpg") no-repeat center/cover;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card-body {
+  text-align: center;
+  padding: 0.5rem 0 2rem 0;
+}
+
+#footer{
+    border-top: 1px solid lightgray;
+    padding-top: 1.5rem;
+}
+
+.footer-links-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column p {
+  color: lightslategray;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+.footer-column li {
+  text-align: center;
+}
+.footer-column a {
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  color: lightslategray;
+}
+
+.footer-bottom{
+margin:  2rem auto;
+text-align: center;
+color: slategray;
+}
