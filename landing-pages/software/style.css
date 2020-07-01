@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+:root {
+  --blue-btn-bg: #597fe2;
+  --bg-main: #eef1fb;
+  --bg-footer: #e2e7fa;
+  --bg-top: #f6f7fd;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  background: var(--bg-main);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: var(--bg-top);
+  
+}
+
+nav .logo {
+  padding: 0.5rem 1rem;
+  font-weight: bolder;
+
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+
+section.main {
+  height: 100%;
+}
+
+.card-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: calc(100% / 3 - 2rem);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  margin: 1rem;
+  background: #fff;
+  /* justify-items: center;
+  align-content: center; */
+  border-radius: 10px;
+  color: #9298ae;
+}
+
+.card i {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.card small {
+  text-align: center;
+  padding: 1rem;
+}
+
+.card button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 3px solid var(--bg-footer);
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #9298ae;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+.card:hover button {
+  background: var(--bg-footer);
+  transition: 0.3s;
+  color: #000;
+}
+
+footer .column-container {
+  display: flex;
+  width: 90%;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+footer .column-container .col {
+  text-align: center;
+  padding: 2rem;
+  width: calc(100% / 3);
+}
+
+footer .column-container .col  h5{
+padding-bottom: 1rem;
+}
+footer {
+  background: var(--bg-footer);
+  color: #9298ae;
+}
+
+footer a {
+  color: #9298ae;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.intro{
+    margin: 2rem;
+    text-align: center;
+    color: #000;
+}
+.intro h1{
+    padding: 2rem;
+}
+.intro p{
+    font-size: 1.3rem;
+    width: 50%;
+    margin: auto;
+    
+}
