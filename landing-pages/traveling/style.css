@@ -27,10 +27,10 @@ body {
   height: 100%;
 }
 
-.content{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -55%);
+.content {
+  position: absolute;
+  top: calc(50% - 8rem);
+  transform: translate(0, -50%);
 }
 
 nav {
@@ -63,18 +63,14 @@ ul li {
 }
 
 .btn-search {
-    background: #498fe1;
-    color: #fff;
-    padding: 1rem 2rem;
-    border: none;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+  background: #498fe1;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 
-    font-size: 1.3rem;
-  }
-  
-.search-container{
-    padding: 1rem;
+  font-size: 1.3rem;
 }
 
 .lead {
@@ -87,23 +83,22 @@ i {
   position: absolute;
   padding: 1rem 1rem;
   min-width: 40px;
-  color: #000;
+  color: #fff;
   font-size: 2rem;
 }
 
-input{
-    padding-left: 4rem;
-    font-size: 1.6rem;
-    border: 0;
-    color: #000;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background-color: rgba(255,255,255,0.2);
+input {
+  padding-left: 4rem;
+  font-size: 1.6rem;
+  border: 0;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 input::placeholder {
-color: #000;
+  color: #fff;
 }
-
 
 .lead h1 {
   font-size: 4rem;
@@ -116,7 +111,9 @@ color: #000;
 }
 
 .search-container {
-  width: 50%;
+  width: 80%;
+  padding: 1rem;
+
   margin: 0 auto;
   display: flex;
   flex-direction: row;
