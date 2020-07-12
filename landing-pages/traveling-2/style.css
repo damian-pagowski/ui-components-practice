@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --dark-bg-nav: #2e2e2e;
+  --gray-txt-nav: #bebebe;
+  --dark-bg-cards: #212121;
+  --gray-icons: #878f9f;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("img/beach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+}
+
+nav {
+  background-color: #fff;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  color: #000;
+  padding: 1rem 2rem;
+}
+#signup-button {
+  background-color: #35c2cf;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  margin: auto;
+}
+
+#search-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+
+}
+
+.main i {
+  font-size: 2rem;
+  position: relative;
+  left: 50px; 
+  color: #000;
+}
+input {
+  border: 0;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  margin: 0;
+  width:100%;
+}
+
+#search-btn {
+  background-color: #f89159;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  color: #000;
+  justify-content: space-around;
+  padding: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5em 0.6em;
+  font-size: 1rem;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+  color: #9695a6;
+  background-color: #f0eff8;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% / 3);
+  padding: 2rem;
+}
+
+.col h3 {
+  font-size: 2rem;
+  text-align: left;
+}
+small {
+  font-size: 1rem;
+}
+
+.col small {
+  padding: 1rem 0;
+}
+.badge i {
+  padding-right: 0.4rem;
+}
+
+.col div {
+  display: flex;
+  justify-content: flex-start;
+}
