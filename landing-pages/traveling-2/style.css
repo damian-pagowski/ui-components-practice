@@ -13,7 +13,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: url("img/beach.jpg");
+  background: url("img/beach-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,14 +55,13 @@ nav li {
 
 .main {
   margin: auto;
+  width: 60%;
 }
 
 #search-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* rgba(0,0,0,0.2); */
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* rgba(0,0,0,0.2); */
 }
 
 .left-input {
@@ -72,7 +71,7 @@ nav li {
 .input-wrapper i {
   font-size: 2rem;
   position: absolute;
-  transform: translate(1.0rem, 1.0rem);
+  transform: translate(1rem, 1rem);
   color: #000;
 }
 input {
@@ -90,12 +89,12 @@ input {
   padding: 1rem 3rem;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  width: 100%;
 }
-
 
 h1 {
   font-size: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 .footer {
@@ -106,7 +105,7 @@ h1 {
   justify-content: space-around;
   padding: 4rem;
   width: 80%;
-  margin: 0 auto;
+  margin: 1rem auto;
   border-radius: 5px;
 }
 
@@ -126,7 +125,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   width: calc(100% / 3);
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 .col h3 {
